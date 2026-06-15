@@ -13,47 +13,48 @@
       color: #222;
       background: #fafafa;
     }
-
+  
     header {
       background: #1f2933;
       color: white;
       padding: 60px 12%;
     }
-
+  
     header h1 {
       font-size: 42px;
       margin-bottom: 10px;
     }
-
+  
     header p {
       font-size: 20px;
       max-width: 800px;
     }
-
+  
     nav {
       background: #ffffff;
       padding: 15px 12%;
       border-bottom: 1px solid #ddd;
     }
-
+  
     nav a {
       margin-right: 25px;
       text-decoration: none;
       color: #1f2933;
       font-weight: bold;
     }
-
+  
     section {
       padding: 40px 12%;
       max-width: 1000px;
+      margin: 0 auto;
     }
-
+  
     h2 {
       color: #1f2933;
       border-bottom: 2px solid #ddd;
       padding-bottom: 8px;
     }
-
+  
     .box {
       background: white;
       padding: 25px;
@@ -61,37 +62,43 @@
       border-radius: 8px;
       border: 1px solid #e5e5e5;
     }
-
+  
+    .person {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+    }
+  
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
     footer {
       background: #1f2933;
       color: white;
       padding: 25px 12%;
       margin-top: 40px;
     }
-    .person {
-  display: flex;
-  align-items: flex-start;
-  gap: 25px;
-  }
   
-  .profile-photo {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+    @media (max-width: 700px) {
+      .person {
+        flex-direction: column;
+      }
   
-  @media (max-width: 700px) {
-    .person {
-      flex-direction: column;
+      .profile-photo {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+      }
+  
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
     }
-  
-    .profile-photo {
-      width: 100%;
-      max-width: 250px;
-      height: auto;
-    }
-  }
   </style>
 </head>
 
@@ -146,16 +153,39 @@
   <h2>People</h2>
 
   <div class="box person">
-    <img src="images/profile photo.PNG" alt="Yiming Zhou" class="profile-photo">
+    <img src="images/pi-photo.png" alt="Yiming Zhou" class="profile-photo">
 
     <div>
       <h3>Yiming Zhou, Ph.D.</h3>
       <p><strong>Principal Investigator</strong></p>
-      <p>Yiming is currently a faculty member with the Interdisciplinary Research Center on Biology and Chemistry at Chinese Academy of Sciences, Shanghai. ​Yiming completed his Ph.D. in System Neuroscience at Fudan University, where he studied the neuronal circuitry mechanisms of learning and memory under the guidance of Dr. Lan Ma. After his PhD, Yiming joined Broad Institute as the postdoc under the mentorship of Dr. Xiao Wang, where he developed technologies in spatial circuits mapping. The Zhou Lab develops new spatial technologies to study learning and memory and decision-making under healthy and disease state at molecular, synaptic, cellular and circuit levels.
+
+      <p>
+        Yiming is currently a faculty member at the Interdisciplinary Research Center on Biology and Chemistry,
+        Chinese Academy of Sciences, Shanghai.
+      </p>
+
+      <p>
+        He completed his Ph.D. in Systems Neuroscience at Fudan University, where he studied the neural circuit
+        mechanisms of learning and memory under the guidance of Dr. Lan Ma. After completing his Ph.D., Yiming
+        joined the Broad Institute as a postdoctoral fellow under the mentorship of Dr. Xiao Wang, where he developed
+        spatial circuit-mapping technologies.
+      </p>
+
+      <p>
+        The Zhou Lab develops new spatial technologies to study learning, memory, and decision-making in healthy
+        and disease states across molecular, synaptic, cellular, and circuit levels.
       </p>
     </div>
   </div>
 
+  <div class="box">
+    <h3>Join the lab</h3>
+    <p>
+      We are recruiting motivated postdoctoral fellows, graduate students,
+      technicians, and undergraduate researchers.
+    </p>
+  </div>
+</section>
   <div class="box">
     <h3>Join the lab</h3>
     <p>
