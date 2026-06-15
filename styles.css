@@ -114,14 +114,16 @@ main {
 }
 
 .feature-image {
-  min-height: 310px;
-  background:
-    linear-gradient(135deg, rgba(139, 30, 36, 0.18), rgba(32, 32, 32, 0.10)),
-    linear-gradient(120deg, #e8e2d7 0%, #f7f7f4 48%, #d8ddd9 100%);
-  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin-left: calc(50% - 50vw);
+  background: none;
+  border: 0;
   display: flex;
   align-items: flex-end;
-  padding: 26px;
+  padding: 0;
 }
 
 .feature-image span {
