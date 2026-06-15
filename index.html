@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Zhou Lab | Brain Disease Spatial Omics</title>
+  <title>Zhou Lab | Spatial Omics of Brain Disorders</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -68,6 +68,30 @@
       padding: 25px 12%;
       margin-top: 40px;
     }
+    .person {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  }
+  
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 700px) {
+    .person {
+      flex-direction: column;
+    }
+  
+    .profile-photo {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+  }
   </style>
 </head>
 
@@ -75,10 +99,10 @@
 
 <header>
   <h1>Zhou Lab</h1>
-  <p>Brain Disease Spatial Omics Laboratory</p>
+  <p>Spatial Omics of Brain Disorders Laboratory</p>
   <p>
     We study how neural circuits and molecular cell states support learning,
-    memory, and decision-making, and how these processes are disrupted in brain disease.
+    memory, and decision-making, and how these processes are disrupted in brain diseases.
   </p>
 </header>
 
@@ -94,7 +118,7 @@
   <h2>Research</h2>
 
   <div class="box">
-    <h3>Spatial omics of brain disease</h3>
+    <h3>Spatial omics of brain disorders</h3>
     <p>
       We develop and apply spatial omics approaches to map molecular and cellular
       changes in healthy and diseased brain states.
@@ -120,6 +144,26 @@
 
 <section id="people">
   <h2>People</h2>
+
+  <div class="box person">
+    <img src="images/profile photo.PNG" alt="Yiming Zhou" class="profile-photo">
+
+    <div>
+      <h3>Yiming Zhou, Ph.D.</h3>
+      <p><strong>Principal Investigator</strong></p>
+      <p>Yiming is currently a faculty member with the Interdisciplinary Research Center on Biology and Chemistry at Chinese Academy of Sciences, Shanghai. ​Yiming completed his Ph.D. in System Neuroscience at Fudan University, where he studied the neuronal circuitry mechanisms of learning and memory under the guidance of Dr. Lan Ma. After his PhD, Yiming joined Broad Institute as the postdoc under the mentorship of Dr. Xiao Wang, where he developed technologies in spatial circuits mapping. The Zhou Lab develops new spatial technologies to study learning and memory and decision-making under healthy and disease state at molecular, synaptic, cellular and circuit levels.
+      </p>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>Join the lab</h3>
+    <p>
+      We are recruiting motivated postdoctoral fellows, graduate students,
+      technicians, and undergraduate researchers.
+    </p>
+  </div>
+</section>
 
   <div class="box">
     <h3>Yiming Zhou, Ph.D.</h3>
