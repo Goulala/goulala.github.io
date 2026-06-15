@@ -4,223 +4,65 @@
   <meta charset="UTF-8">
   <title>Zhou Lab | Spatial Omics of Brain Disorders</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      color: #222;
-      background: #fafafa;
-    }
-
-    header {
-      background: #1f2933;
-      color: white;
-      padding: 60px 12%;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-      max-width: 800px;
-    }
-
-    nav {
-      background: #ffffff;
-      padding: 15px 12%;
-      border-bottom: 1px solid #ddd;
-    }
-
-    nav a {
-      margin-right: 25px;
-      text-decoration: none;
-      color: #1f2933;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 12%;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #1f2933;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 8px;
-    }
-
-    .box {
-      background: white;
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 8px;
-      border: 1px solid #e5e5e5;
-    }
-
-    .person {
-      display: flex;
-      align-items: flex-start;
-      gap: 25px;
-    }
-
-    .profile-photo {
-      width: 180px;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-      border: 1px solid #e5e5e5;
-    }
-
-    footer {
-      background: #1f2933;
-      color: white;
-      padding: 25px 12%;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 700px) {
-      .person {
-        flex-direction: column;
-      }
-
-      .profile-photo {
-        width: 100%;
-        max-width: 250px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin-bottom: 8px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Zhou Lab</h1>
-  <p>Spatial Omics of Brain Disorders Laboratory</p>
-  <p>
-    We study how neural circuits and molecular cell states support learning,
-    memory, and decision-making, and how these processes are disrupted in brain diseases.
-  </p>
+<header class="site-header">
+  <div class="topbar">
+    <a class="brand" href="index.html">Zhou Lab</a>
+
+    <nav aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="yiming-zhou.html">Yiming Zhou</a>
+      <a href="members.html">Lab Members</a>
+      <a href="publications.html">Publication</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="#research">Research</a>
-  <a href="#people">People</a>
-  <a href="#publications">Publications</a>
-  <a href="#join">Join Us</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="research">
-  <h2>Research</h2>
-
-  <div class="box">
-    <h3>Spatial omics of brain disorders</h3>
-    <p>
-      We develop and apply spatial omics approaches to map molecular and cellular
-      changes in healthy and diseased brain states.
-    </p>
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Zhou Lab</h1>
+    <p class="tagline">Spatial omics, neural circuits, and molecular mechanisms of brain disorders.</p>
   </div>
 
-  <div class="box">
-    <h3>Neural circuits of memory and decision-making</h3>
-    <p>
-      We investigate how neural circuits encode experience, guide behavior,
-      and become maladaptive in neurological and psychiatric disorders.
-    </p>
-  </div>
+  <div class="feature-band">
+    <div class="feature-image">
+      <span>Mapping brain function across molecules, cells, synapses, and circuits.</span>
+    </div>
 
-  <div class="box">
-    <h3>Multimodal brain mapping</h3>
-    <p>
-      We combine spatial transcriptomics, circuit neuroscience, imaging,
-      and computational analysis to understand brain function across scales.
-    </p>
-  </div>
-</section>
-
-<section id="people">
-  <h2>People</h2>
-
-  <div class="box person">
-    <img src="images/pi-photo.png" alt="Yiming Zhou" class="profile-photo">
-
-    <div>
-      <h3>Yiming Zhou, Ph.D.</h3>
-      <p><strong>Principal Investigator</strong></p>
-
+    <div class="feature-note">
       <p>
-        Yiming is currently a faculty member at the Interdisciplinary Research Center on Biology and Chemistry,
+        We develop and apply spatial technologies to study learning, memory,
+        decision-making, and disease-associated changes in the brain.
+      </p>
+      <p>
+        The lab is based at the Interdisciplinary Research Center on Biology and Chemistry,
         Chinese Academy of Sciences, Shanghai.
-      </p>
-
-      <p>
-        He completed his Ph.D. in Systems Neuroscience at Fudan University, where he studied the neural circuit
-        mechanisms of learning and memory under the guidance of Dr. Lan Ma. After completing his Ph.D., Yiming
-        joined the Broad Institute as a postdoctoral fellow under the mentorship of Dr. Xiao Wang, where he developed
-        spatial circuit-mapping technologies.
-      </p>
-
-      <p>
-        The Zhou Lab develops new spatial technologies to study learning, memory, and decision-making in healthy
-        and disease states across molecular, synaptic, cellular, and circuit levels.
       </p>
     </div>
   </div>
 </section>
 
-<section id="publications">
-  <h2>Publications</h2>
-
-  <div class="box">
-    <p>Selected publications will be added here.</p>
-    <p>
-      Google Scholar:
-      <a href="https://scholar.google.com/citations?user=gU6m2iUAAAAJ&amp;hl=en">https://scholar.google.com/citations?user=gU6m2iUAAAAJ&amp;hl=en</a>
+<main>
+  <section>
+    <h2>Welcome</h2>
+    <p class="muted">
+      The Zhou Lab studies how molecular cell states and neural circuits support behavior,
+      and how these systems are disrupted in neurological and psychiatric disorders.
     </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>Copyright &copy; 2026 Zhou Lab</div>
+    <div><a href="contact.html">Contact</a></div>
   </div>
-</section>
-
-<section id="join">
-  <h2>Join Us</h2>
-
-  <div class="box">
-    <p>
-      We welcome applicants interested in spatial omics, neural circuits,
-      brain disease, computational neuroscience, and advanced imaging.
-    </p>
-
-    <p>
-      Prospective postdocs, graduate students, and research staff should send
-      a CV, a brief statement of research interests, and contact information
-      for references.
-    </p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-
-  <div class="box">
-    <p>Email: iaieioiui@gmail.com</p>
-    <p>Institution: Interdisciplinary Research Center on Biology and Chemistry</p>
-    <p>Address: Bibo Road, Zhangjiang, Pudong New Area, Shanghai</p>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2026 Zhou Lab. All rights reserved.</p>
 </footer>
 
 </body>
