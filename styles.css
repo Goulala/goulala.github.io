@@ -104,30 +104,53 @@ main {
 }
 
 .feature-band {
-  width: 100%;
-  padding: 34px 0 46px;
-  display: block;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 34px 28px 46px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  align-items: stretch;
 }
 
 .feature-image {
   position: relative;
   overflow: hidden;
-  width: 70vw;
-  height: 70vh;
-  margin: 0 auto;
-  background: none;
-  border: 0;
+  width: 100%;
+  min-height: 260px;
+  height: min(42vw, 420px);
+  background:
+    linear-gradient(135deg, rgba(139, 30, 36, 0.18), rgba(32, 32, 32, 0.10)),
+    linear-gradient(120deg, #e8e2d7 0%, #f7f7f4 48%, #d8ddd9 100%);
+  border: 1px solid var(--line);
   display: flex;
   align-items: flex-end;
-  padding: 0;
+  padding: 26px;
+}
+
+.feature-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.48));
 }
 
 .feature-image span {
+  position: relative;
+  z-index: 1;
   max-width: 560px;
   font-size: 28px;
   line-height: 1.25;
   font-weight: 700;
-  color: var(--ink);
+  color: #ffffff;
 }
 
 .feature-note {
@@ -175,6 +198,27 @@ p {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 26px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 900px;
+}
+
+.gallery-item {
+  border-top: 3px solid var(--line);
+  padding-top: 18px;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--line);
+  margin-bottom: 12px;
 }
 
 .research-item,
@@ -249,13 +293,16 @@ p {
   }
 
   .feature-band,
+  .gallery-grid,
   .research-grid,
   .person {
     grid-template-columns: 1fr;
   }
 
   .feature-image {
-    min-height: 240px;
+    min-height: 220px;
+    height: 58vw;
+    max-height: 340px;
   }
 
   .profile-photo {
