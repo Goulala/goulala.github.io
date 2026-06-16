@@ -200,6 +200,26 @@ p {
   gap: 26px;
 }
 
+.essay {
+  max-width: 900px;
+}
+
+.essay p {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.question-list {
+  margin: 0 0 24px;
+  padding-left: 24px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.question-list li {
+  margin-bottom: 12px;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -234,11 +254,63 @@ p {
   color: var(--muted);
 }
 
+.publication-list {
+  margin: 0 0 24px;
+  padding-left: 24px;
+  color: var(--muted);
+}
+
+.publication-list li {
+  margin-bottom: 16px;
+}
+
+.publication-list em {
+  color: var(--ink);
+}
+
 .person {
   display: grid;
   grid-template-columns: 230px minmax(0, 1fr);
   gap: 34px;
   align-items: start;
+}
+
+.member-frame {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+
+.member-frame:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.member-photo,
+.member-photo-placeholder {
+  width: 190px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  border: 1px solid var(--line);
+}
+
+.member-photo {
+  object-fit: cover;
+}
+
+.member-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--soft);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.member-info p:last-child {
+  margin-bottom: 0;
 }
 
 .profile-photo {
@@ -258,6 +330,22 @@ p {
 .contact-list {
   display: grid;
   gap: 8px;
+}
+
+.map-frame {
+  width: 100vw;
+  height: 640px;
+  margin-left: calc(50% - 50vw);
+  margin-top: 28px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
 }
 
 .site-footer {
@@ -295,6 +383,7 @@ p {
   .feature-band,
   .gallery-grid,
   .research-grid,
+  .member-frame,
   .person {
     grid-template-columns: 1fr;
   }
@@ -308,5 +397,15 @@ p {
   .profile-photo {
     width: 100%;
     max-width: 280px;
+  }
+
+  .member-photo,
+  .member-photo-placeholder {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .map-frame {
+    height: 460px;
   }
 }
